@@ -3,13 +3,13 @@ import './_Home.scss';
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="page-view">
+
       <article>
         <h1>NEAT Consulting</h1>
-        <p>We are a global technology company specialized in Noise Engineering & Acoustic Technology</p>
-        <p>Our technical expertise is in the area of aircraft noise, including low noise design, noise source modeling, noise prediction, acoustic testing technologies, and noise reduction and mitigation, for both aircraft engines and airframes.</p>
-        <p>We provide engineering services to industrial companies, research institutions and academic establishments in applications for commercial aircraft.</p>
+        <p>We are a global technology company specializing in Noise Engineering & Acoustic Technology. Our technical expertise is in the area of aircraft noise, including low noise design, noise source modeling, noise prediction, acoustic testing technologies, and noise reduction and mitigation, for both aircraft engines and airframes. We provide engineering services to industrial companies, research institutions and academic establishments in applications for commercial aircraft.</p>
       </article>
+
       <article>
         <h2>Business</h2>
         <ul>
@@ -19,6 +19,7 @@ export default function Home() {
           <li>Technical training</li>
         </ul>
       </article>
+
       <article>
         <h2>Expertise</h2>
         <ul>
@@ -28,6 +29,7 @@ export default function Home() {
           <li>Acoustic testing</li>
         </ul>
       </article>
+      
     </div>
   );
 }

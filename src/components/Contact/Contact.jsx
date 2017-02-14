@@ -3,7 +3,7 @@ import './_Contact.scss';
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className="page-view">
       <div>
         <h1>Contact Information:</h1>
         <p>Email: info@neat-consulting.com</p>

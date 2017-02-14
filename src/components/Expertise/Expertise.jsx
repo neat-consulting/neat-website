@@ -3,7 +3,7 @@ import './_Expertise.scss';
 
 export default function Expertise() {
   return (
-    <div className="expertise">
+    <div className="page-view">
 
       <div>
         <h1>Technical Expertise</h1>
