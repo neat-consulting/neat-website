@@ -6,7 +6,7 @@ class Nav extends Component {
     return (
       <nav>
         <a href="www.neat-consulting.com">
-          <img src="images/icon.png" />
+          <img className="logo" src="images/icon.png" />
         </a>
         <ul>
           <li>One</li>
