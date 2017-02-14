@@ -4,6 +4,10 @@ import { NavLink } from 'components';
 import './_Nav.scss';
 
 export default class Nav extends Component {
+  constructor() {
+    super()
+    this.state = {}
+  }
   render() {
     const linkNames = ['menu', 'home', 'services', 'expertise', 'about', 'contact'];
     const navLinks = linkNames.map(name => {
