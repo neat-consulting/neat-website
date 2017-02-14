@@ -36,6 +36,7 @@ module.exports = {
     extensions: ['.js', '.json', '.jsx', '.css', '.scss']
   },
   devServer: {
-    contentBase: src
+    contentBase: src,
+    historyApiFallback: true
   }
 }
