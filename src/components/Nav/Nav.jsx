@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Nav.scss';
 
-class Nav extends Component {
+export default class Nav extends Component {
   render() {
     return (
       <nav>
@@ -9,13 +9,13 @@ class Nav extends Component {
           <img className="logo" src="images/icon.png" />
         </a>
         <ul>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Expertise</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
     )
   }
 }
-
-export default Nav;
