@@ -14,11 +14,12 @@ export default class Nav extends Component {
       return (
         <NavLink
           key={name}
-          route={name}/>
+          route={name} />
       );
     });
     return (
       <nav>
+        <h1>NEAT Consulting</h1>
         <ul className="top-nav">
           {navLinks}
         </ul>
