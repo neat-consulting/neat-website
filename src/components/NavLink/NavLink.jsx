@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import './_NavLink.scss';
 
 export default function NavLink({route, menuToggled, toggleMenu}) {
   if (route === 'menu') {

@@ -9,6 +9,31 @@
   z-index: 1;
   width: 100%;
 
-  // background: rgba(0, 0, 0, 0.1);
+  background: #6AB344;
   list-style-type: none;
+
+  h1 {
+    color: white;
+    z-index: 2;
+  }
+  
+  li {
+    a {
+      display: inline-block;
+      padding: 1.28em;
+
+      font-family: Lato;
+      font-size: 1em;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      
+      cursor: pointer;
+      transition: 0.25s;
+    }
+  }
+
+  li.menu {
+    display: none;
+  }
 }

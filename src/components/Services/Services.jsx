@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import './_Services.scss';
+import React from 'react';
 
 export default function Services() {
   return (
     <div className="page-view">
-
       <article>
         <h1>Services</h1>
         <p>NEAT Consulting is a global technology service company in the technical area of Noise Engineering & Acoustic Technology. We specialize in aircraft noise and acoustic technologies. Our technical expertise includes various aspects of noise prediction, source modeling, acoustic testing, low noise design, and noise reduction and mitigation.</p>
@@ -29,7 +27,6 @@ export default function Services() {
         <h2>Technical Training</h2>
         <p>NEAT Consulting offers customers technical training in noise engineering and acoustic technology. Customers can define specific topics, and NEAT Consulting provides training in these topics with formats including seminars, workshops, short courses, and on-job training.</p>
       </article>
-
     </div>
   );
 }

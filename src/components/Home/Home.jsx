@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import './_Home.scss';
+import React from 'react';
 
 export default function Home() {
   return (
     <div className="page-view">
-
       <article>
         <h1>NEAT Consulting</h1>
         <p>We are a global technology company specializing in Noise Engineering & Acoustic Technology. Our technical expertise is in the area of aircraft noise, including low noise design, noise source modeling, noise prediction, acoustic testing technologies, and noise reduction and mitigation, for both aircraft engines and airframes. We provide engineering services to industrial companies, research institutions and academic establishments in applications for commercial aircraft.</p>
@@ -29,7 +27,6 @@ export default function Home() {
           <li>Acoustic testing</li>
         </ul>
       </article>
-      
     </div>
   );
 }
