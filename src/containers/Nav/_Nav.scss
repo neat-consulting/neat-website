@@ -1,22 +1,30 @@
-.top-nav {
+@mixin flexbox($direction, $justify, $align) {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 
+.top-nav {
+  @include flexbox(row, space-between, center);
+  box-shadow: 0 1px 5px black;
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
-
   background: #6AB344;
   list-style-type: none;
+  color: white;
 
-  h1 {
-    color: white;
-    z-index: 2;
+  div {
+    @include flexbox(row, center, center);
+    transition: 1s;
+    li {
+      display: inline;
+    }
   }
-  
+  div.right-links-closed { display: none; }
+  div.right-links-open { display: inline; }
   li {
     a {
       display: inline-block;
@@ -33,7 +41,15 @@
     }
   }
 
+  li.logo {
+    font-size: 2em;
+    a {
+      text-transform: none;
+    }
+  }
+
   li.menu {
-    display: none;
+    margin-top: -10px;
+    font-size: 2em;
   }
 }

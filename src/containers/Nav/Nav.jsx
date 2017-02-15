@@ -1,27 +1,38 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { NavLink } from 'components';
 import './_Nav.scss';
 
 export default class Nav extends Component {
   constructor() {
     super()
-    this.state = {}
+    this.state = {
+      menuToggled: true
+    }
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
+
+  toggleMenu() {
+    this.setState({
+      menuToggled: this.state.menuToggled ? false : true
+    })
+  }
+
   render() {
-    const linkNames = ['menu', 'home', 'services', 'expertise', 'about', 'contact'];
-    const navLinks = linkNames.map(name => {
-      return (
-        <NavLink
-          key={name}
-          route={name} />
-      );
-    });
     return (
       <nav>
-        <h1>NEAT Consulting</h1>
         <ul className="top-nav">
-          {navLinks}
+          <div>
+            <li className="logo"><Link to="/">NEAT Consulting</Link></li>
+          </div>
+          <div>
+            <div className={this.state.menuToggled ? "right-links-open" : "right-links-closed"}>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/expertise">Expertise</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </div>
+            <li className="menu"><a onClick={() => this.toggleMenu()}>&#9776;</a></li>
+          </div>
         </ul>
       </nav>
     );
