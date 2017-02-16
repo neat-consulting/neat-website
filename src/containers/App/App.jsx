@@ -7,10 +7,9 @@ export default class App extends Component {
     return (
       <div className="app">
         <header className="header">
-          <h1>NEAT Consulting</h1>
           <Nav />
         </header>
-        <img className="banner" src="assets/soundwave.png" />
+        <div className="banner" />
         <div className="content">
           {this.props.children}
         </div>

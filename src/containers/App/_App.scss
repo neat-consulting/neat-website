@@ -3,17 +3,56 @@
   padding: 0;
 }
 
+@mixin flexbox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 .header {
-  
+  @include flexbox(row, center, center);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 5px black;
+  z-index: 1;
+  width: 100%; height: 120px;
+  background: #6AB344;
+  color: white;
+  font-family: Lato;
+
+  nav {
+    @include flexbox(row, center, center);
+    width: 100%; height: 100%;
+  }
 }
 
 .banner {
-  margin-top: 120px;
+  position: fixed;
   width: 100%; height: 200px;
+  margin-top: 120px;
+  background: url("../../assets/soundwave.png") center center;
+  background-color: white;
+}
+
+.content {
+  @include flexbox(row, center, center);
+  padding-top: 320px;
+  margin-bottom: 100px;
+  overflow: scroll;
+  .page-view {
+    width: 768px;
+    padding: 25px;
+  }
 }
 
 .footer {
+  @include flexbox(column, center, center);
   position: fixed;
   bottom: 0;
-  margin: 2em;
+  box-shadow: 0 1px 5px black;
+  z-index: 1;
+  width: 100%; height: 100px;
+  background: #404040;
+  color: white;
 }

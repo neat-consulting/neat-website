@@ -21,11 +21,9 @@ export default class Nav extends Component {
     return (
       <nav>
         <ul className="top-nav">
+          <li className="logo"><Link to="/">NEAT Consulting</Link></li>
           <div>
-            <li className="logo"><Link to="/">NEAT Consulting</Link></li>
-          </div>
-          <div>
-            <div className={this.state.menuToggled ? "right-links-open" : "right-links-closed"}>
+            <div className={this.state.menuToggled ? "right-links" : "hidden"}>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/expertise">Expertise</Link></li>
               <li><Link to="/about">About</Link></li>

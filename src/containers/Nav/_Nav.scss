@@ -7,49 +7,37 @@
 
 .top-nav {
   @include flexbox(row, space-between, center);
-  box-shadow: 0 1px 5px black;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background: #6AB344;
+  width: 768px; height: 100%;
   list-style-type: none;
-  color: white;
 
   div {
     @include flexbox(row, center, center);
     transition: 1s;
-    li {
-      display: inline;
-    }
   }
-  div.right-links-closed { display: none; }
-  div.right-links-open { display: inline; }
+
+  div.hidden {
+    margin-top: -240px;
+  }
+
+  div.right-links {
+    margin-top: inherit;
+  }
+
   li {
     a {
-      display: inline-block;
-      padding: 1.28em;
-
-      font-family: Lato;
-      font-size: 1em;
+      padding: 1em;
       color: white;
-      text-transform: uppercase;
       text-decoration: none;
-      
-      cursor: pointer;
-      transition: 0.25s;
+      text-transform: uppercase;
     }
   }
 
   li.logo {
-    font-size: 2em;
-    a {
-      text-transform: none;
-    }
+    font-size: 1.5em;
   }
 
   li.menu {
-    margin-top: -10px;
     font-size: 2em;
+    margin-top: -5px;
   }
 }
