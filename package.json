@@ -2,11 +2,11 @@
   "name": "neat-website",
   "version": "1.0.0",
   "description": "NEAT Consulting Website",
-  "main": "index.jsx",
+  "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "start": "node",
+    "start": "node src/index.js",
     "test": "mocha tests"
   },
   "repository": {
