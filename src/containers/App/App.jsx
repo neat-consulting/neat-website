@@ -9,7 +9,6 @@ export default class App extends Component {
         <header className="header">
           <Nav />
         </header>
-        <div className="banner" />
         <div className="content">
           {this.props.children}
         </div>

@@ -1,58 +1,80 @@
+$darktan: #D7D3C8;
+$lighttan: #F6F4EC;
+$charcoal: #404040;
+$cactus: #087744;
+
 * {
   margin: 0;
   padding: 0;
 }
 
-@mixin flexbox($direction, $justify, $align) {
+body {
+  min-height: 100vh;
+  background: linear-gradient($darktan, $lighttan);
+  font-family: Open Sans;
+}
+
+.app {
   display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .header {
-  @include flexbox(row, center, center);
-  position: fixed;
-  top: 0;
-  box-shadow: 0 1px 5px black;
+  position: fixed; top: 0;
   z-index: 1;
-  width: 100%; height: 120px;
-  background: #6AB344;
-  color: white;
-  font-family: Lato;
-
-  nav {
-    @include flexbox(row, center, center);
-    width: 100%; height: 100%;
-  }
-}
-
-.banner {
-  position: fixed;
-  width: 100%; height: 200px;
-  margin-top: 120px;
-  background: url("../../assets/soundwave.png") center center;
-  background-color: white;
+  width: 100%;
 }
 
 .content {
-  @include flexbox(row, center, center);
-  padding-top: 320px;
-  margin-bottom: 100px;
-  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  min-height: calc(100vh - 280px);
+  
   .page-view {
-    width: 768px;
-    padding: 25px;
+    max-width: 768px;
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.25em;
+      border-bottom: 1px solid $cactus;
+    }
+    ul {
+      list-style-type: none;
+    }
+    article {
+      margin: 25px 0;
+    }
   }
 }
 
+
 .footer {
-  @include flexbox(column, center, center);
-  position: fixed;
-  bottom: 0;
-  box-shadow: 0 1px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 1;
   width: 100%; height: 100px;
-  background: #404040;
-  color: white;
+  background: $charcoal;
+  color: $lighttan;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .content {
+    .page-view {
+      width: 90%;
+      h1 { font-size: 2em;}
+      h2 { font-size: 1.2em;}
+    }
+  }
+
+  .footer {
+    font-size: .75em;
+  }
 }

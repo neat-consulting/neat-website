@@ -21,16 +21,12 @@ export default class Nav extends Component {
     return (
       <nav>
         <ul className="top-nav">
-          <li className="logo"><Link to="/">NEAT Consulting</Link></li>
-          <div>
-            <div className={this.state.menuToggled ? "right-links" : "hidden"}>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/expertise">Expertise</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </div>
-            <li className="menu"><a onClick={() => this.toggleMenu()}>&#9776;</a></li>
-          </div>
+          <li className="logo"><Link to="/"><img src="assets/logo.png" /></Link></li>
+          <li className="menu"><a onClick={() => console.log('clicked')}>&#9776;</a></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/expertise">Expertise</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     );
