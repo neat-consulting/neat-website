@@ -7,6 +7,7 @@ $cactus: #087744;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-end;
   list-style-type: none;
   
   li {
@@ -20,10 +21,6 @@ $cactus: #087744;
       padding: 1.5em;
       color: #087744;
       font-size: 1.2em;
-    }
-
-    a:hover {
-      border: 3px solid $charcoal;
     }
   }
 }
