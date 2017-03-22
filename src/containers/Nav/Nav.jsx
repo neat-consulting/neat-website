@@ -19,16 +19,18 @@ export default class Nav extends Component {
 
   render() {
     return (
-      <nav>
-        <ul className="top-nav">
-          <li className="logo"><Link to="/"><img src="assets/logo.png" />NEAT Consulting</Link></li>
-          {/*<li className="menu"><a onClick={() => console.log('clicked')}>&#9776;</a></li>*/}
-          <li className="links"><Link to="/services">Services</Link></li>
-          <li className="links"><Link to="/expertise">Expertise</Link></li>
-          <li className="links"><Link to="/about">About</Link></li>
-          <li className="links"><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+      <header className="header">
+        <Link className="logo" to="/"><img src="images/logo.png" />NEAT Consulting</Link>
+        <nav>
+          <ul className="top-nav">
+            <li className="links"><Link to="/services">Services</Link></li>
+            <li className="links"><Link to="/expertise">Expertise</Link></li>
+            <li className="links"><Link to="/about">About</Link></li>
+            <li className="links"><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
+        <Link className="menu">Menu</Link>
+      </header>
     );
   }
 }

@@ -3,6 +3,14 @@ $lighttan: #F6F4EC;
 $charcoal: #404040;
 $cactus: #087744;
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed; top: 0;
+  z-index: 1;
+  max-width: 750px;
+}
+
 .top-nav {
   display: flex;
   flex-direction: row;
