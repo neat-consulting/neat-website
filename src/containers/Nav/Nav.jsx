@@ -20,16 +20,16 @@ export default class Nav extends Component {
   render() {
     return (
       <header className="header">
-        <Link className="logo" to="/"><img src="images/logo.png" />NEAT Consulting</Link>
+        <a className="logo" href="#top"><img src="images/logo.png" />NEAT Consulting</a>
         <nav>
-          <ul className="top-nav">
-            <li className="links"><Link to="/services">Services</Link></li>
-            <li className="links"><Link to="/expertise">Expertise</Link></li>
-            <li className="links"><Link to="/about">About</Link></li>
-            <li className="links"><Link to="/contact">Contact</Link></li>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <Link className="menu">Menu</Link>
+        <a className="menu">Menu</a>
       </header>
     );
   }

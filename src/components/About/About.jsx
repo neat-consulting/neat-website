@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="page-view">
+    <div id="about" className="page-view">
       <article>
         <h1>About Us</h1>
         <p>NEAT Consulting is a global technology service company with business offices in the United States, China, England and Hong Kong.</p>

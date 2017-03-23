@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Expertise() {
   return (
-    <div className="page-view">
+    <div id="expertise" className="page-view">
       <article>
         <h1>Technical Expertise</h1>
         <p>NEAT Consulting's main technical expertise is aircraft noise and acoustic technologies. This includes noise source modelig and prediction, acoustic testing, noise reduction, and low noise design. The applications can be components, such as engines and airframe, as well as aircraft systems that account for all the components and operation conditions. The applications also cover both current generation of commercial aircraft and future aircraft configurations.</p>

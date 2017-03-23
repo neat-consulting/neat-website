@@ -6,7 +6,7 @@ import './_App.scss';
 export default class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div id="top" className="app">
         <Nav />
         <div className="content">
           <Home />
