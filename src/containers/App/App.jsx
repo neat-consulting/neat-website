@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Nav } from 'containers';
 import { Home, Services, Expertise, About, Contact } from 'components';
-import './_App.scss';
 
 export default class App extends Component {
   render() {
     return (
       <div id="top" className="app">
         <Nav />
+        <div className="hero"></div>
         <div className="content">
           <Home />
           <Services />

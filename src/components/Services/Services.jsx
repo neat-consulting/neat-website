@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Services() {
   return (
-    <div id="services" className="page-view">
+    <div id="services" className="section">
       <article>
         <h1>Services</h1>
         <p>NEAT Consulting is a global technology service company in the technical area of Noise Engineering & Acoustic Technology. We specialize in aircraft noise and acoustic technologies. Our technical expertise includes various aspects of noise prediction, source modeling, acoustic testing, low noise design, and noise reduction and mitigation.</p>
